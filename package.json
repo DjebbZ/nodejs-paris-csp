@@ -24,8 +24,7 @@
   "homepage": "https://github.com/DjebbZ/nodejs-paris-csp#readme",
   "dependencies": {
     "babel": "^5.2.16",
-    "js-csp": "^0.4.1",
-    "transducers.js": "^0.3.2"
+    "js-csp": "^0.4.1"
   },
   "devDependencies": {
     "reactify": "~1.0.0",
