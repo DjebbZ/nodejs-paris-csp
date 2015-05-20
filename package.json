@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-paris-csp",
+  "version": "1.0.0",
+  "description": "Talk at Node.js Paris about CSP, 20-05-2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js --transform babelify --outfile dist/index.js",
+    "watch": "watchify   index.js --transform babelify --outfile dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjebbZ/nodejs-paris-csp.git"
+  },
+  "keywords": [
+    "csp",
+    "communication",
+    "channels"
+  ],
+  "author": "Khalid Jebbari",
+  "bugs": {
+    "url": "https://github.com/DjebbZ/nodejs-paris-csp/issues"
+  },
+  "homepage": "https://github.com/DjebbZ/nodejs-paris-csp#readme",
+  "dependencies": {
+    "babel": "^5.2.16",
+    "js-csp": "^0.4.1",
+    "transducers.js": "^0.3.2"
+  },
+  "devDependencies": {
+    "reactify": "~1.0.0",
+    "browserify": "~9.0.3",
+    "babelify": "~5.0.3",
+    "watchify": "~2.4.0"
+  }
+}
