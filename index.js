@@ -34,7 +34,7 @@ function doDisplayData(data) {
 
 // With classical javascript
 
-/* // Uncomment this line to disable this implementation
+ // Comment this line to disable this implementation
 
 // GLOBAL STATE
 var isRequestPending = false
@@ -72,7 +72,7 @@ document.querySelector("#button").addEventListener("click", function(e) {
 
 // With CSP
 
-// Uncomment this line to disable this implementation
+ /* Uncomment this line to disable this implementation
 
 // Helpers that wrap callback-expecting functions to use channels
 
@@ -94,7 +94,7 @@ function wrappedDoRequest() {
 
 // Let's go (pun intended) !
 
-// The csp/channel code should be wrapped in a go call,
+// The csp/channel code should be wrapped in a go block,
 // passing it an ES6 generator. (Here transpiled to ES5 by Babel)
 go(function* () {
     var clickChannel = listenTo("#button", "click")
@@ -117,3 +117,5 @@ go(function* () {
         doDisplayData(result.value)
     }
 })
+
+// */
